@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let menorNota = 0;
+    let maiorNota = 0;
+    for(let i = 0; i <10;i++){
+        let nota = parseInt(window.prompt('Informe sua nota'));
+        if(nota > maiorNota || i === 0)
+        maiorNota = nota;
+        if(nota < menorNota || i === 0)
+        menorNota = nota;
+    }
+    document.write(`<h1>A sua maior nota é ${maiorNota} e sua menor nota é ${menorNota}</h1>`);
+
+    </script>
+</body>
+</html>

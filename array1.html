@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let listaAlunos = [];
+    for(let i = 0; i < 20;i++){
+        let aluno = {nome:window.prompt('Informe seu nome'),nota:parseInt(window.prompt('Informe sua nota'))};
+        listaAlunos.push(aluno);
+    }
+    for(let i = 0; i < listaAlunos.length;i++)
+        document.write(`<h1>O nome do aluno ${i})é ${listaAlunos[i].nome} e sua nota é ${listaAlunos[i].nota}</h1>`);
+
+    </script>
+</body>
+</html>
